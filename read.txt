@@ -4,6 +4,8 @@ string strDate=DateTime.FromOADate(Convert.ToInt32(strExcelValue)).ToString("d")
 2、EPPlus
 1).下载http://epplus.codeplex.com/
 2).下拉列表示例
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
             var sex = new string[] { "男", "女" };
             var course = new string[] { "C", "C++", "C#", "Java" };
             var file = new FileInfo("DropDownList.xlsx");
@@ -60,3 +62,4 @@ string strDate=DateTime.FromOADate(Convert.ToInt32(strExcelValue)).ToString("d")
             {
                 MessageBox.Show(ex.Message);
             }
+        }
