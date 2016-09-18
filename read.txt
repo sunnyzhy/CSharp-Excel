@@ -1,0 +1,2 @@
+1、C#读取excel日期的时候获取到的是数字，其解决方法
+string strDate=DateTime.FromOADate(Convert.ToInt32(strExcelValue)).ToString("d");
